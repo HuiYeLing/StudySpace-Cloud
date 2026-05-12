@@ -22,7 +22,9 @@
 
     <modules>
         <module>studyspace-common</module>
-        <module>studyspace-auth</module>
+        <module>studyspace-gateway</module>
+        <module>studyspace-user</module>
+        <module>studyspace-seat</module>
     </modules>
 
     <properties>

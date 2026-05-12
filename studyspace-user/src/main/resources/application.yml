@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: studyspace-auth
+    name: studyspace-user
   datasource:
     url: jdbc:mysql://localhost:3306/library?useSSL=false&serverTimezone=UTC&characterEncoding=utf8&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver

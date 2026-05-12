@@ -1,6 +1,4 @@
-
-
-
+package com.studyspace.user.service;
 
 import com.studyspace.common.result.ApiResult;
 

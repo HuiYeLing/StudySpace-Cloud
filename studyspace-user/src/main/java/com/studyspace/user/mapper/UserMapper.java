@@ -1,6 +1,7 @@
-package com.studyspace.auth.mapper;
+package com.studyspace.user.mapper;
 
-import com.studyspace.auth.domain.User;
+
+import com.studyspace.user.domain.User;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

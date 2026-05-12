@@ -1,14 +1,16 @@
-package com.studyspace.auth.service.impl;
+package com.studyspace.user.service.impl;
 
-import com.studyspace.auth.domain.User;
-import com.studyspace.auth.mapper.UserMapper;
+
 import com.studyspace.common.result.ApiResult;
+import com.studyspace.user.domain.User;
+import com.studyspace.user.mapper.UserMapper;
+import com.studyspace.user.service.UserService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-
-
 
 import java.util.Date;
 import java.util.List;

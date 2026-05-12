@@ -1,4 +1,4 @@
-package com.studyspace.auth.domain;
+package com.studyspace.user.domain;
 
 import java.util.Date;
 

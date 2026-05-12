@@ -14,8 +14,8 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        # auth ??
-        - id: auth-route
-          uri: lb://studyspace-auth
+        # user ??
+        - id: user-route
+          uri: lb://studyspace-user
           predicates:
-            - Path=/api/auth/**
+              - Path=/api/user/**
