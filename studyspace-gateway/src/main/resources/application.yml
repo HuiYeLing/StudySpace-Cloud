@@ -19,3 +19,8 @@ spring:
           uri: lb://studyspace-user
           predicates:
               - Path=/api/user/**
+        # seat ??
+        - id: seat-route
+          uri: lb://studyspace-seat
+          predicates:
+            - Path=/api/seat/**

@@ -1,5 +1,7 @@
 package com.studyspace.user.controller;
 import com.studyspace.common.result.ApiResult;
+import com.studyspace.user.domain.User;
+import com.studyspace.user.mapper.UserMapper;
 import com.studyspace.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +12,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
+    @Autowired
+    UserMapper userMapper;
     // 通过id获取用户信息
     @GetMapping("/getUserById")
     public ApiResult getUserById(@RequestParam long id) {
@@ -61,4 +64,13 @@ public class UserController {
         return userService.getCurrentUser();
     }
 
+    @GetMapping("/internal/currentUser")
+    public ApiResult getCurrentUserInternal(@RequestParam Long userId) {
+        User user = userMapper.getUserById(userId);
+        if (user != null) {
+            user.setPassword(null);
+            return ApiResult.ok(user);
+        }
+        return ApiResult.error("用户不存在");
+    }
 }
