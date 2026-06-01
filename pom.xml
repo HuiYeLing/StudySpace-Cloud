@@ -25,6 +25,8 @@
         <module>studyspace-gateway</module>
         <module>studyspace-user</module>
         <module>studyspace-seat</module>
+        <module>studyspace-employee</module>
+        <module>studyspace-product</module>
     </modules>
 
     <properties>

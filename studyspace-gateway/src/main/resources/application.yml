@@ -24,3 +24,18 @@ spring:
           uri: lb://studyspace-seat
           predicates:
             - Path=/api/seat/**
+        # reservation ??
+        - id: reservation-route
+          uri: lb://studyspace-reservation
+          predicates:
+          - Path=/api/reservation/**
+        # employee ??
+        - id: employee-route
+          uri: lb://studyspace-employee
+          predicates:
+            - Path=/api/employee/**
+        # product ??
+        - id: product-route
+          uri: lb://studyspace-product
+          predicates:
+              - Path=/api/product/**
